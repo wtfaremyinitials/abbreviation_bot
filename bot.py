@@ -29,8 +29,8 @@ def look_for_abbreviation(comment):
 		return True;
 
 def crawl():
-	for comment in r.get_comments():
-		if(look_for_abbreviatio(comment)):
+	for comment in sub.get_comments():
+		if(look_for_abbreviation(comment)):
 			reply(comment, response)
 			
 while(True):
