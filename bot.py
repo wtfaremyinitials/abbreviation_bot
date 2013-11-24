@@ -24,7 +24,7 @@ def reply(parent, message):
 	already_replied.append(parent.id)
 
 def look_for_abbreviation(comment):
-	if(string.count(comment.body.lower(), " SINC") > 0): # The space before SINC is intentional to remove the possibility of SINC being found in a word
+	if(string.count(comment.body, "SINC") > 0): # The space before SINC is intentional to remove the possibility of SINC being found in a word
 		return True;
 
 def crawl():
