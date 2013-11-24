@@ -14,7 +14,7 @@ sub = r.get_subreddit("all")
 
 already_replied = []
 
-response = "> SINC \n\nSINC stands for 'Simply Informational, Not Confrontational' \n\nI'm a friendly reddit bot that explains new or confusing abbreviations! You can find more information about me on [github](https://github.com/wtfaremyinitials/abbreviation_bot)!" # In the future I'll probably support multiple abbreviations, but this works for now.
+response = "> SINC \n\nSINC stands for 'Strictly Informational, Not Confrontational' \n\nI'm a friendly reddit bot that explains new or confusing abbreviations! You can find more information about me on [github](https://github.com/wtfaremyinitials/abbreviation_bot)!" # In the future I'll probably support multiple abbreviations, but this works for now.
 
 def reply(parent, message):
 	if(parent.id in already_replied): # Don't reply to the same comment twice
