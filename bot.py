@@ -1,6 +1,5 @@
 import praw
 import string
-import time
 
 username = "abbreviation_bot"
 
@@ -33,6 +32,5 @@ def crawl():
 		if(look_for_abbreviation(comment)):
 			reply(comment, response)
 			
-while(True):
+while(True): # Praw keeps track of the 2 request per second limit, so there's no need for delay
 	crawl()
-	time.sleep(10)
